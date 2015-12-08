@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="idaalApp">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Idaal</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/small-business.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>
+
+
+
+    <![endif]-->
+    <!-- <script src= "js/angular-route.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/X.Y.Z/angular-route.js"></script>
+    <script src= "//ajax.googleapis.com/ajax/libs/angularjs/X.Y.Z/angular-animate.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/idaal.js"></script>
+     <script src= "js/angular-route.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/angularjs/X.Y.Z/angular-route.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="images/idaalLogo.jpg" alt="idaal logo">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="http://search.ebscohost.com/login.aspx?direct=true&custid=ns055920&db=edspub&type=44&plp=1&lang=en">Journals</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Heading Row -->
+        <div class="row">
+            <div class="col-md-8">
+                <img class="img-responsive img-rounded" src="images/headerPic.jpg" alt="Header Image">
+            </div>
+            <!-- /.col-md-8 -->
+            <div class="col-md-4">
+                <h1>Idaal.com</h1>
+                <p>idaal.com is a consortium of Intellectual Disability Libraries established to provide easy and comprehensive access to up-to-date
+                    information in this and related fields thereby supporting research, best practice and education in our services.</p>
+                <a class="btn btn-primary btn-lg" href="#">Read More</a>
+            </div>
+            <!-- /.col-md-4 -->
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+
+
+       
+        <div class="row" ng-controller="MainCtrl" >
+
+            <div class="col-md-6" >
+                <div id="searchOptions">Click on a database title below or select All Databases (Quick Search) above to simultaneously search all four. If you would like to access the databases off site please contact your library for an Athens password.</div>
+              <br> <blockquote>
+                  <a href="#">CINAHL® Plus with Full Text</a><br>
+                  <p> A nursing and allied health research database providing full text for more than 770 journals.</p>
+               </blockquote>
+                <blockquote>
+                    <a href="#">Psychology & Behavioral Sciences Collection™ Full Text</a><br>
+                    <p>Offers full text for 560 journals in such fields as emotional and behavioural characteristics, psychiatry & psychology, anthropology, and observational & experimental methods. Also full text intellectual disability journals. </p>
+                </blockquote>
+                <blockquote>
+                    <a href="#">PsycINFO®</a><br>
+                    <p>Contains more than 2.4 million citations in psychology and related disciplines, also including the psychological aspects of fields such as medicine, psychiatry, nursing, sociology, education, pharmacology, physiology, ID, plus more. Citations from over 400 journals are available in full text. </p>
+                </blockquote>
+                <blockquote>
+                    <a href="#">MEDLINE® with Full Text</a><br>
+                    <p>MEDLINE® with Full Text is the world's most comprehensive source of full text for medical journals, providing full text for more than 1,470 journals. </p>
+                </blockquote>
+
+            </div>
+            <!-- /.col-md-6 -->
+            <div class="col-md-6" id="mycol6">
+                <h2 id="searchControl">Quick Search <span id="goRightToggle" class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span><span id="goRightToggle2" class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span></h2>
+
+                <p id="showHide">
+                    <a class="btn btn-danger" href="https://auth.athensams.net/oahf?SAMLRequest=fZFdT4MwFIb%2FCun9KBS2sGaQ4HbhkqlE0AtvTKlHaQIt9hQ%2F%2Fr0wNJs3uz5vn%2FOctxsUXdvzfHCNvof3AdB5X12rkR8HKRms5kagQq5FB8id5GV%2Bc%2BDMD3hvjTPStMTLEcE6ZfTWaBw6sCXYDyXh4f6Qksa5Hjml2Ki6Ni24xocapWkMOl%2BajpanAaKhE5%2FR4q6siLcbhZQWE%2FoEEqOtL1wDepREX4OjRjSvxNvvUvIcRLGMY7GKEiGSaJkIuWYrEHHCwtUyZskYQxxgr9EJ7VLCgnC5CNYLxqqQ8YjxMHwiXvF725XSL0q%2FXS6inkPIr6uqWMzmj2DxaD0GSLaZ6uTHxfas4MtY8dcqyabTL1S4oWf8eVnPb0fgfleYVslvL29b87m1IBykJCQ0m5%2F8%2F%2FrsBw%3D%3D&RelayState=https%3A%2F%2Fshibboleth.ebscohost.com%2FShibAgent.aspx%3Fshib_returl%3Dhttp%253a%252f%252fsearch.ebscohost.com%252flogin.aspx%253fauthtype%253dip%25252cathens%2526profile%253dehost%26IdpId%3Dhttps%3A%2F%2Fidp.eduserv.org.uk%2Fopenathens">All Databases<span id="goRight" class="glyphicon glyphicon-book" aria-hidden="true"></span></a><br>
+                    <a class="btn btn-primary" href="http://search.ebscohost.com/login.aspx?direct=true&custid=ns055920&db=edspub&type=44&plp=1&lang=en">A - Z Journals<span id="goRight" class="glyphicon glyphicon-book" aria-hidden="true"></span></a><br>
+                    <a class="btn btn-warning" href="https://www.medicinescomplete.com/mc/bnf/current/login.htm?uri=http%3A%2F%2Fwww.medicinescomplete.com%2Fmc%2Fbnf%2Fcurrent%2F">BNF Online <span id="goRight" class="glyphicon glyphicon-book" aria-hidden="true"></span></a><br>
+                </p>
+
+            </div>
+            <!-- /.col-md-6 -->
+        </div>
+        <!-- /.row -->
+        <hr>
+        <h2>Other Useful Resources/Databases</h2>
+        <div class="container-fluid">
+                <table class="table table-striped">
+                    <tr><td><a href="http://www.cochranelibrary.com/"><button type="button" class="btn btn-info"  style="margin-right:5px;" >Info</button> Cochrane Library </a></td><td><a href="http://www.ncbi.nlm.nih.gov/pubmed"><button type="button" class="btn btn-info"  style="margin-right:5px;" >Info</button> PubMed </a></td></tr>
+<tr><td><a href="http://eric.ed.gov/"><button type="button" class="btn btn-info"  style="margin-right:5px;" >Info</button>  ERIC </a></td><td><a href="http://www.nlm.nih.gov/medlineplus/"> <button type="button" class="btn btn-info"  style="margin-right:5px;" >Info</button> MedlinePlus</a> </td></tr>
+
+                    <tr><td><a href="http://www.otseeker.com/"><button type="button" class="btn btn-info" style="margin-right:5px;" >Info</button> OTSeeker </a></td><td><a href="http://www.pedro.org.au/"><button type="button" class="btn btn-info"  style="margin-right:5px;" >Info</button> PEDro</a> </td></tr>
+                    <tr><td><a href="http://www.library.nhs.uk/specialistcollections/default.aspx"> <button type="button" class="btn btn-info"  style="margin-right:5px;" >Info</button>National Library for Health - Specialist libraries </a></td><td><a href="http://www.irishstatutebook.ie/"><button type="button" class="btn btn-info"  style="margin-right:5px;" >Info</button> Acts of the Oireachtas  </a></td></tr>
+                    <tr><td><a href="http://www.lenus.ie/hse/"><button type="button" class="btn btn-info"  style="margin-right:5px;" >Info</button>  LENUS - The Irish Health Repository </a></td><td></td></tr>
+                </table>
+            </div>
+            <hr>
+             <!-- Content Row -->
+        <div class="row" ng-controller="MainCtrl2" >
+            <div class="col-md-4" ng-repeat="org in organisations" id="orgDiv">
+                <h3>Daughters of Charity Service</h3>
+                <p>
+
+                    <img ng-src="{{org.imagepic}}" alt="{{org.imagepic}} image" width="140" height="140" />
+                </p>
+                <p>nspired by service to those most in need, we recognise that the person with intellectual disability possesses a unique dignity and potential, and has a right to be enabled to take his or her place in society and in turn to contribute in a significant way to the enhancement of that society</p>
+                
+                <p>
+                Website: <a href="http://www.docservice.ie">http://www.docservice.ie; </a><br>
+                Booklist: <a href="http://www.librarything.com/catalog/doclibrary">http://www.librarything.com/catalog/doclibrary</a>
+                
+</p>                <a class="btn btn-primary" href="">Back</a>
+            
+            <br>
+            <p>
+           <strong> Daughters of Charity Service</strong>
+ 	
+Contact details:<br>
+ 
+<br><br>
+Grace Hillis<br>
+Librarian<br>
+Daughters of Charity Disability Support Services<br>
+St. Joseph's Centre<br>
+Clonsilla<br>
+Dublin 15<br>
+<br><br>
+Tel: 01-824 8650<br>
+Fax: 01-8214648<br>
+Email: grace.hillis@docservice.ie<br>
+
+<br><br>
+Contact details:<br>
+<br><br>
+Nora Bourke<br>
+Daughters of Charity Disability Support Services<br>
+St. Vincent's Centre<br>
+Lisnagry<br>
+Co. Limerick<br>
+<br><br>
+Tel: 061-501 408<br>
+Fax: 061 339439<br>
+Email: nora.bourke@lim-docservice.ie<br></p>
+            </div>
+            <!-- /.col-md-4 -->
+
+        </div>
+        <!-- /.row -->
+<hr>
+        <!-- Content Row -->
+        <!-- Footer -->
+        <footer>
+           <!-- <div id="row">
+                <span class='st_sharethis_large' displayText='ShareThis'></span>
+                <span class='st_facebook_large' displayText='Facebook'></span>
+                <span class='st_twitter_large' displayText='Tweet'></span>
+                <span class='st_linkedin_large' displayText='LinkedIn'></span>
+                <span class='st_pinterest_large' displayText='Pinterest'></span>
+                <span class='st_email_large' displayText='Email'></span>
+            </div> -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Idaal.com  <script type="text/javascript">
+    
+      var d = new Date().getFullYear();
+      var n = new Date().getFullYear()+1;
+      document.write( d + " / " + n);
+      
+      </script></p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

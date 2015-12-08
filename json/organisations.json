@@ -1,0 +1,46 @@
+[
+  {
+    "id":1,
+	"name": "Daughters of Charity Service",
+    "infotext": "Inspired by service to those most in need, we recognise that the person with intellectual disability possesses a unique dignity and potential, and has a right to be enabled to take his or her place in society and in turn to contribute in a significant way to the enhancement of that society.",
+    "imagepic": "images/docs.jpg",
+	"link": "daughters.html"
+
+  },
+  {
+	  "id":2,
+    "name": "St. John of God Hospitaller",
+    "infotext": "DSt. John of God Hospitaller Services is an international healthcare organisation with over 250 hospitals and centres in 48 countries worldwide. In Ireland, St John of God Hospitaller Services provides services for children and adults with intellectual disabilities.",
+    "imagepic": "images/sjogh.jpg",
+	"link": "john.html"
+  },
+  {
+	  "id":3,
+    "name": "St. Michael's House",
+    "infotext": "St Michael's House believes that people with a disability have equal and inalienable rights of dignity and freedom. These rights include equality of opportunities, full participation as equal members of society and the right to be treated with the same respect and dignity as other members of our society",
+    "imagepic": "images/smh.jpg",
+	"link": "michael.html"
+  },
+  {
+	  "id":4,
+    "name": "Muiríosa Foundation",
+    "infotext": "We provide a range of residential, community and clinical services to people of all ages with Intellectual Disability. Operating in South Kildare, Laois / Offaly and Longford / Westmeath, the Sisters of Charity of Jesus and Mary offer both loving care and opportunities for personal development.",
+    "imagepic": "images/mf.jpg",
+	"link": "Muiriosa.html"
+
+  },
+  {
+	  "id":5,
+    "name": "Stewart's Care",
+    "infotext": "Stewarts Care is a charitable foundation, with a 130-year tradition in the provision of care for people with intellectual disability. The institution was the first in Ireland to offer such support for people with severe disabilities.",
+    "imagepic": "images/sc.jpg",
+	"link": "stewart.html"
+  },
+  {
+	  "id":6,
+    "name": "COPE Foundation",
+    "infotext": "Cope Foundation is a non-profit organisation which supports over 2,300 children and adults with intellectual disabilities and/or autism. Cope Foundation’s vision is: To enhance the lives of people with an intellectual disability and/or autism; working in partnership with them, their families and local communities, to provide a range of person centred services and supports.",
+    "imagepic": "images/cope.jpg",
+	"link": "cope.html"
+  }
+]
