@@ -2,8 +2,8 @@ h3 {
     height:60px;
 }
 hr{
-    margin-top:50px;
-    margin-bottom:50px;
+    margin-top:20px;
+    margin-bottom:20px;
     -webkit-box-shadow: 1px 1px 1px 1px #eee;
     -moz-box-shadow: 1px 1px 1px 1px #eee;
     box-shadow:  1px 1px 1px 1px #eee;
@@ -22,24 +22,35 @@ table .btn btn-info{
 	font-size: 18px;
 	
 }
+#headerImg{
+	margin-top:-5px;	
+}
 #styleBox{
 	border-radius:10px;	
 	padding-top:20px;
 	padding-top:20px;
 }
 #mycol6 a {
-    width:99%;
-    margin:5px;
-	font-size:16px;
+	width: 99%;
+    margin: 5px;
+    font-size: 16px;
+    height: 45px;
+    padding-top: 10px;
+}
+.mainFont{
+font-size:18px;	
 }
 #mycol6 h2 {
     background: #204d74;
     padding: 5px;
+    /* padding-left: 20px; */
     width: 100%;
     color: white;
     height: 76px;
     text-align: center;
     padding-top: 20px;
+    margin-left: 4px;
+    width: 99%;
 }
 #showHide{
 
@@ -93,7 +104,7 @@ border:none;
     float: left;
 }
 
-@media only screen and (min-width:768px ) and (max-width:1220px) {
+@media only screen and (min-width:968px ) and (max-width:1220px) {
     #orgDiv{
         width:90%;
         height:500px;
@@ -107,24 +118,28 @@ border:none;
 
 
     }
+	.mainFont{
+font-size:16px;	
+}
 	#orgDiv p:nth-child(3) {
 
-    height: 260px;
+    height: auto;
     font-size: 16px;
     float: left;
 	}
 	#orgDiv p:nth-child(3) {
-		height: 270px;
+		height: auto;
 		font-size: 16px;
 		float: left;
 	}
 	#orgDiv {
-		height:580px;	
+		height:380px;	
 	}
+
 }
 
 
-@media only screen and (min-width:480px) and (max-width:767px) {
+@media only screen and (min-width:480px) and (max-width:967px) {
     #orgDiv {
         width: 90%;
         height: auto;
@@ -133,17 +148,27 @@ border:none;
     }
 		#orgDiv p:nth-child(3) {
 
-    height: 260px;
+    height: auto;
     font-size: 16px;
     float: left;
 }
 #orgDiv p:nth-child(3) {
-    height: 270px;
+    height: auto;
     font-size: 16px;
     float: left;
 }
 #orgDiv {
-	height:580px;	
+	height:auto;	
+}
+.navbar-inverse{
+	height:65px;
+}
+	.navbar-inverse{
+	height:80px;
+
+}
+	#headerImg{
+	margin-top:-0px;	
 }
 }
 
@@ -154,4 +179,14 @@ border:none;
         height: auto;
         padding-bottom:20px;
     }
+	#headerImg{
+	margin-top:-0px;	
+}
+	.navbar-inverse .navbar-collapse{
+	border:none;	
+	}
+	.navbar-inverse{
+	padding-bottom:20px;
+	border:none;
+}
 }
